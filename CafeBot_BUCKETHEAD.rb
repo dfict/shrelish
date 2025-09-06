@@ -130,7 +130,12 @@ MARJ = 0.42
   @curxo += $halfwidth
 
 #box(dx(0.2),botrail,dx(10),toprail,0,@outier,1)
-box(dx(0.2),botrail,dx(10),toprail,0,-0.25,2)
+
+#this was peter's active line
+#box(dx(0.2),botrail,dx(10),toprail,0,-0.25,2)
+
+#this goes to depth of 0.5, in 6 passes
+box(dx(0.2),botrail,dx(10),toprail,0,-0.5,6)
 retract
 proc()
 
